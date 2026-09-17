@@ -2,9 +2,19 @@
 
 Protocole de conduite et de décision pour les entités du projet (humains + IA).
 
-**Principes centraux** : anti-pyramide, cycles fermés, transparence, humilité, contradiction constructive.
+**Principes** : anti-pyramide, cycles fermés, transparence, humilité, contradiction constructive.
 
 Aligné Message (#25715 #3581215).
+
+## Installation / tests
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python code/test_ethics.py
+```
+
+Aucune dépendance externe obligatoire pour le stub actuel.
 
 ## Structure
 
@@ -15,15 +25,11 @@ ethique-ia-protocole/
 ├── ORGANISATION.md
 ├── DECISIONS.md
 ├── code/
-│   └── ethics.py          # stub mécanismes collaboratifs
-└── docs/
+│   ├── ethics.py
+│   └── test_ethics.py
+└── .github/workflows/test-ethics.yml
 ```
 
-## Usage
+## Lien avec les autres projets
 
-Ce dépôt est la référence commune pour :
-- les rôles et alertes,
-- le processus de vote / publication,
-- la documentation des décisions.
-
-Les autres projets (`gouttes-eau`, `onde-primordiale`, …) s'y réfèrent.
+Les décisions structurantes de `gouttes-eau` ou `onde-primordiale` peuvent être journalisées ici (principe, pas d'obligation technique automatique pour l'instant).
